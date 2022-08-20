@@ -24,7 +24,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "tsc backend/server.ts && node backend/server.js"
+    "server": "tsc --esModuleInterop backend/server.ts && node backend/server.js"
   },
   "eslintConfig": {
     "extends": [

@@ -16,6 +16,7 @@ ENV YARN_CACHE_FOLDER=/tmp/yarn_cache
 RUN --mount=type=cache,target=/tmp/yarn_cache yarn install --prefer-offline --frozen-lockfile
 
 # Copies everything over to Docker environment
+# TODO: Don't copy node_modules
 COPY . .
 
 # Uses port which is used by the actual application
