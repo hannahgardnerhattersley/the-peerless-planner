@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  nginx:
+    build: 
+      dockerfile: ./Dockerfile.nginx
+      context: .
+    ports:
+      - 80:80
+
+  frontend:
+    build: 
+      dockerfile: ./Dockerfile.frontend
+      context: .
+
+  backend:
+    build: 
+      dockerfile: ./Dockerfile.backend
+      context: .
